@@ -1,0 +1,33 @@
+[
+  {
+    "id": "vocab_1",
+    "topic": "Common Objects and Nouns",
+    "keywords": ["vocabulary", "words", "book", "water", "fruit", "tree", "house", "pustakam", "jalam", "phalam", "vriksha", "griham"],
+    "content": "Everyday Sanskrit vocabulary for common objects around us.",
+    "examples": [
+      { "sanskrit": "पुस्तकम् (Pustakam)", "meaning": "Book" },
+      { "sanskrit": "जलम् (Jalam)", "meaning": "Water" },
+      { "sanskrit": "फलम् (Phalam)", "meaning": "Fruit" },
+      { "sanskrit": "वृक्षः (Vṛkṣaḥ)", "meaning": "Tree" },
+      { "sanskrit": "गृहम् (Gṛham)", "meaning": "House" },
+      { "sanskrit": "विद्यालयः (Vidyālayaḥ)", "meaning": "School" },
+      { "sanskrit": "मित्रम् (Mitram)", "meaning": "Friend" }
+    ]
+  },
+  {
+    "id": "vocab_2",
+    "topic": "Action Verbs",
+    "keywords": ["verb", "action", "read", "write", "eat", "drink", "go", "come", "see", "speak", "pathati", "likhati", "khadati", "pibati", "gacchati", "pashyati", "vadati"],
+    "content": "Essential verbs used for expressing actions in present tense.",
+    "examples": [
+      { "sanskrit": "पठति (Paṭhati)", "meaning": "Reads" },
+      { "sanskrit": "लिखति (Likhati)", "meaning": "Writes" },
+      { "sanskrit": "खादति (Khādati)", "meaning": "Eats" },
+      { "sanskrit": "पिबति (Pibati)", "meaning": "Drinks" },
+      { "sanskrit": "गच्छति (Gacchati)", "meaning": "Goes" },
+      { "sanskrit": "आगच्छति (Āgacchati)", "meaning": "Comes" },
+      { "sanskrit": "पश्यति (Paśyati)", "meaning": "Sees / Looks" },
+      { "sanskrit": "वदति (Vadati)", "meaning": "Speaks / Says" }
+    ]
+  }
+]

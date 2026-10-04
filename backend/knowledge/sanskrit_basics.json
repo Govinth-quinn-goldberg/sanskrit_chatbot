@@ -1,0 +1,37 @@
+[
+  {
+    "id": "basics_1",
+    "topic": "Sanskrit Alphabet and Devanagari",
+    "keywords": ["alphabet", "devanagari", "vowels", "consonants", "swara", "vyanjana", "script", "letters"],
+    "content": "Sanskrit is traditionally written in the Devanagari script. It consists of 13 vowels (Swaras) such as अ, आ, इ, ई, उ, ऊ, ऋ, ए, ऐ, ओ, औ, and 33 primary consonants (Vyanjanas) organized phonetically by point of articulation (Guttural, Palatal, Retroflex, Dental, Labial).",
+    "examples": [
+      { "sanskrit": "अ (a)", "meaning": "Short vowel 'a' as in 'cup'" },
+      { "sanskrit": "आ (ā)", "meaning": "Long vowel 'a' as in 'father'" },
+      { "sanskrit": "क (ka)", "meaning": "Guttural consonant 'ka'" }
+    ]
+  },
+  {
+    "id": "basics_2",
+    "topic": "Greetings and Common Expressions",
+    "keywords": ["greeting", "namaste", "hello", "goodbye", "thank you", "welcome", "yes", "no", "dhanyavaad"],
+    "content": "Basic Sanskrit greetings are respectful and commonly used in daily conversation.",
+    "examples": [
+      { "sanskrit": "नमस्ते (Namaste)", "meaning": "Greetings / Hello / Respectful bow" },
+      { "sanskrit": "सुप्रभातम् (Suprabhātam)", "meaning": "Good morning" },
+      { "sanskrit": "शुभरात्रिः (Śubharātriḥ)", "meaning": "Good night" },
+      { "sanskrit": "धन्यवादः (Dhanyavādaḥ)", "meaning": "Thank you" },
+      { "sanskrit": "स्वागतम् (Svāgatam)", "meaning": "Welcome" },
+      { "sanskrit": "आम (Ām)", "meaning": "Yes" },
+      { "sanskrit": "न (Na)", "meaning": "No" }
+    ]
+  },
+  {
+    "id": "basics_3",
+    "topic": "Word Order and Sentence Structure",
+    "keywords": ["sentence", "word order", "sov", "structure", "subject", "object", "verb"],
+    "content": "Sanskrit sentence structure typically follows Subject-Object-Verb (SOV) order, although because inflections (vibhaktis) clearly define grammatical roles, word order in Sanskrit is relatively flexible.",
+    "examples": [
+      { "sanskrit": "रामः पुस्तकं पठति। (Rāmaḥ pustakaṁ paṭhati.)", "meaning": "Rama (Subject) book (Object) reads (Verb) -> Rama reads the book." }
+    ]
+  }
+]

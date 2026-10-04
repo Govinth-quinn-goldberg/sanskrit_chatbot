@@ -1,0 +1,51 @@
+[
+  {
+    "id": "grammar_1",
+    "topic": "Pronouns (Sarvanāma)",
+    "keywords": ["pronoun", "pronouns", "sarvanama", "aham", "tvam", "sah", "saa", "tat", "i", "you", "he", "she", "it"],
+    "content": "Sanskrit pronouns change based on person and gender. First person 'Аһаm' (I) and second person 'Tvam' (You) are gender-neutral. Third person pronouns differ: 'Sah' (He), 'Sā' (She), 'Tat' (It).",
+    "examples": [
+      { "sanskrit": "अहम् (Aham)", "meaning": "I (First Person Singular)" },
+      { "sanskrit": "त्वम् (Tvam)", "meaning": "You (Second Person Singular)" },
+      { "sanskrit": "सह (Saḥ)", "meaning": "He / That male (Third Person Masculine Singular)" },
+      { "sanskrit": "सा (Sā)", "meaning": "She / That female (Third Person Feminine Singular)" },
+      { "sanskrit": "तत् (Tat)", "meaning": "It / That (Third Person Neuter Singular)" }
+    ]
+  },
+  {
+    "id": "grammar_2",
+    "topic": "Nouns and Genders (Liṅga)",
+    "keywords": ["noun", "gender", "linga", "pumlinga", "strilinga", "napunsakalinga", "masculine", "feminine", "neuter"],
+    "content": "Sanskrit has three grammatical genders: Masculine (Puṁlliṅga), Feminine Strīliṅga), and Neuter (Napuṁsakaliṅga). Nouns typically end in specific vowels, such as -aḥ for masculine, -ā or -ī for feminine, and -am for neuter in nominative singular.",
+    "examples": [
+      { "sanskrit": "रामः (Rāmaḥ)", "meaning": "Rama (Masculine noun)" },
+      { "sanskrit": "बालिका (Bālikā)", "meaning": "Girl (Feminine noun)" },
+      { "sanskrit": "फलम् (Phalam)", "meaning": "Fruit (Neuter noun)" },
+      { "sanskrit": "पुस्तकम् (Pustakam)", "meaning": "Book (Neuter noun)" }
+    ]
+  },
+  {
+    "id": "grammar_3",
+    "topic": "Verbs and Conjugations (Dhātu & Lakāra)",
+    "keywords": ["verb", "verbs", "dhatu", "lakara", "pathati", "gacchati", "khadati", "present tense", "lat lakara"],
+    "content": "Verbs are derived from root forms (Dhātus). In Lat Lakāra (Present Tense), third person singular verbs usually end in '-ti' (ति), second person in '-si' (सि), and first person in '-mi' (मि). Subject and verb must agree in person and number.",
+    "examples": [
+      { "sanskrit": "पठति (Paṭhati)", "meaning": "He/She/It reads (Third Person Singular)" },
+      { "sanskrit": "पठसि (Paṭhasi)", "meaning": "You read (Second Person Singular)" },
+      { "sanskrit": "पठामि (Paṭhāmi)", "meaning": "I read (First Person Singular)" },
+      { "sanskrit": "गच्छति (Gacchati)", "meaning": "He/She goes" },
+      { "sanskrit": "गच्छामि (Gacchāmi)", "meaning": "I go" }
+    ]
+  },
+  {
+    "id": "grammar_4",
+    "topic": "Cases and Vibhaktis (Prathamā & Dvitīyā)",
+    "keywords": ["case", "vibhakti", "prathama", "dvitiya", "nominative", "accusative", "subject", "object"],
+    "content": "Sanskrit has 8 cases (Vibhaktis). The Nominative Case (Prathamā Vibhakti) marks the Subject (e.g. रामः - Rama). The Accusative Case (Dvitīyā Vibhakti) marks the Direct Object (e.g. पुस्तकम् - book, रामम् - Rama as object).",
+    "examples": [
+      { "sanskrit": "रामः (Rāmaḥ)", "meaning": "Rama (Subject, Nominative)" },
+      { "sanskrit": "रामम् (Rāmam)", "meaning": "Rama (Object, Accusative)" },
+      { "sanskrit": "बालकः फलम् खादति।", "meaning": "The boy (Subject) eats a fruit (Object)." }
+    ]
+  }
+]

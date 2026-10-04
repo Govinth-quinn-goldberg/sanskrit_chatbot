@@ -1,0 +1,242 @@
+[
+  {
+    "query": "I am learning Sanskrit.",
+    "data": {
+      "reply": "Sanskrit:\nसंस्कृतं पठामि।\n\nCombined Meaning:\nI am learning Sanskrit\n\nWord Meanings:\nन्ले → sun (Nominative singular masculine)\nन्ले अगीय → I am studying (Accusative singular masculine subject + Instrumental singular first person singular verb)\nअगीय → Sanskrit (Instrumental singular first person singular verb)\n\nExplanation:\nThe sentence is in the nominative case for 'sun' and instrumental case for 'I am studying'. The verb 'pāthāmi' is in the first person singular form, indicating that the speaker is performing the action of studying.",
+      "translation_data": {
+        "type": "translation",
+        "sanskrit": "संस्कृतं पठामि।",
+        "words": [
+          {
+            "word": "न्ले",
+            "sanskrit": "न्ले",
+            "meaning": "sun",
+            "transliteration": "sūryaḥ",
+            "grammar": "Nominative singular masculine",
+            "pronunciation": "soo-ryah"
+          },
+          {
+            "word": "न्ले अगीय",
+            "sanskrit": "न्ले अगीय",
+            "meaning": "I am studying",
+            "transliteration": "sūryaṃ pāthāmi",
+            "grammar": "Accusative singular masculine subject + Instrumental singular first person singular verb",
+            "pronunciation": "soo-ryah pah-thah-mee"
+          },
+          {
+            "word": "अगीय",
+            "sanskrit": "अगीय",
+            "meaning": "Sanskrit",
+            "transliteration": "pāthāmi",
+            "grammar": "Instrumental singular first person singular verb",
+            "pronunciation": "pah-thah-mee"
+          }
+        ],
+        "combined_meaning": "I am learning Sanskrit",
+        "back_translation": "I am studying Sanskrit.",
+        "verified": true,
+        "warning": null,
+        "explanation": "The sentence is in the nominative case for 'sun' and instrumental case for 'I am studying'. The verb 'pāthāmi' is in the first person singular form, indicating that the speaker is performing the action of studying.",
+        "reply": "Sanskrit:\nसंस्कृतं पठामि।\n\nCombined Meaning:\nI am learning Sanskrit\n\nWord Meanings:\nन्ले → sun (Nominative singular masculine)\nन्ले अगीय → I am studying (Accusative singular masculine subject + Instrumental singular first person singular verb)\nअगीय → Sanskrit (Instrumental singular first person singular verb)\n\nExplanation:\nThe sentence is in the nominative case for 'sun' and instrumental case for 'I am studying'. The verb 'pāthāmi' is in the first person singular form, indicating that the speaker is performing the action of studying."
+      }
+    }
+  },
+  {
+    "query": "Rama reads the book.",
+    "data": {
+      "reply": "Sanskrit:\nरामः पुस्तकं पठति।\n\nCombined Meaning:\nSanskrit meaning: रामः पुस्तकं पठति।\n\nWord Meanings:\nरामः → Detailed analysis unavailable for this word.\nपुस्तकं → Detailed analysis unavailable for this word.\nपठति → Detailed analysis unavailable for this word.\n\nExplanation:\nIndicTrans2 translation (English -> Sanskrit). Detailed grammatical analysis could not be generated.",
+      "translation_data": {
+        "type": "translation",
+        "sanskrit": "रामः पुस्तकं पठति।",
+        "words": [
+          {
+            "word": "रामः",
+            "sanskrit": "रामः",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "पुस्तकं",
+            "sanskrit": "पुस्तकं",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "पठति",
+            "sanskrit": "पठति",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          }
+        ],
+        "combined_meaning": "Sanskrit meaning: रामः पुस्तकं पठति।",
+        "back_translation": "Rama reads the book",
+        "verified": true,
+        "warning": null,
+        "explanation": "IndicTrans2 translation (English -> Sanskrit). Detailed grammatical analysis could not be generated.",
+        "reply": "Sanskrit:\nरामः पुस्तकं पठति।\n\nCombined Meaning:\nSanskrit meaning: रामः पुस्तकं पठति।\n\nWord Meanings:\nरामः → Detailed analysis unavailable for this word.\nपुस्तकं → Detailed analysis unavailable for this word.\nपठति → Detailed analysis unavailable for this word.\n\nExplanation:\nIndicTrans2 translation (English -> Sanskrit). Detailed grammatical analysis could not be generated."
+      }
+    }
+  },
+  {
+    "query": "How do I say hello in Sanskrit?",
+    "data": {
+      "reply": "Sanskrit:\nनमस्कारः।\n\nCombined Meaning:\nGreetings or salutation, especially to a person of higher status.\n\nWord Meanings:\nन्ले → sun (Nominative singular masculine)\n\nExplanation:\nThe Sanskrit word न्ले (sūryaḥ) is used as a greeting, similar to saying 'hello' or 'hi'. The use of the nominative singular masculine form indicates that the speaker is addressing someone of higher status or authority.",
+      "translation_data": {
+        "type": "translation",
+        "sanskrit": "नमस्कारः।",
+        "words": [
+          {
+            "word": "न्ले",
+            "sanskrit": "न्ले",
+            "meaning": "sun",
+            "transliteration": "sūryaḥ",
+            "grammar": "Nominative singular masculine",
+            "pronunciation": "soo-ryah"
+          }
+        ],
+        "combined_meaning": "Greetings or salutation, especially to a person of higher status.",
+        "back_translation": "Namaskar: Hello",
+        "verified": true,
+        "warning": null,
+        "explanation": "The Sanskrit word न्ले (sūryaḥ) is used as a greeting, similar to saying 'hello' or 'hi'. The use of the nominative singular masculine form indicates that the speaker is addressing someone of higher status or authority.",
+        "reply": "Sanskrit:\nनमस्कारः।\n\nCombined Meaning:\nGreetings or salutation, especially to a person of higher status.\n\nWord Meanings:\nन्ले → sun (Nominative singular masculine)\n\nExplanation:\nThe Sanskrit word न्ले (sūryaḥ) is used as a greeting, similar to saying 'hello' or 'hi'. The use of the nominative singular masculine form indicates that the speaker is addressing someone of higher status or authority."
+      }
+    }
+  },
+  {
+    "query": "AK was like the sun to me, she set everything spin and orbit around her and me i was more than happy to be spin around",
+    "data": {
+      "reply": "Sanskrit:\nए. के. मम परिक्रमणस्य अपेक्षया, सूर्यस्य परिभ्रमणस्य अपेक्षया, मम परिक्रमणस्य अपेक्षया, अधिकतया प्रसन्नः आसीत्।\n\nCombined Meaning:\nSanskrit meaning: ए. के. मम परिक्रमणस्य अपेक्षया, सूर्यस्य परिभ्रमणस्य अपेक्षया, मम परिक्रमणस्य अपेक्षया, अधिकतया प्रसन्नः आसीत्।\n\nWord Meanings:\nए → Detailed analysis unavailable for this word.\nके → Detailed analysis unavailable for this word.\nमम → Detailed analysis unavailable for this word.\nपरिक्रमणस्य → Detailed analysis unavailable for this word.\nअपेक्षया → Detailed analysis unavailable for this word.\nसूर्यस्य → Detailed analysis unavailable for this word.\nपरिभ्रमणस्य → Detailed analysis unavailable for this word.\nअपेक्षया → Detailed analysis unavailable for this word.\nमम → Detailed analysis unavailable for this word.\nपरिक्रमणस्य → Detailed analysis unavailable for this word.\nअपेक्षया → Detailed analysis unavailable for this word.\nअधिकतया → Detailed analysis unavailable for this word.\nप्रसन्नः → Detailed analysis unavailable for this word.\nआसीत् → Detailed analysis unavailable for this word.\n\nExplanation:\nIndicTrans2 translation (English -> Sanskrit). Detailed grammatical analysis could not be generated.",
+      "translation_data": {
+        "type": "translation",
+        "sanskrit": "ए. के. मम परिक्रमणस्य अपेक्षया, सूर्यस्य परिभ्रमणस्य अपेक्षया, मम परिक्रमणस्य अपेक्षया, अधिकतया प्रसन्नः आसीत्।",
+        "words": [
+          {
+            "word": "ए",
+            "sanskrit": "ए",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "के",
+            "sanskrit": "के",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "मम",
+            "sanskrit": "मम",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "परिक्रमणस्य",
+            "sanskrit": "परिक्रमणस्य",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "अपेक्षया",
+            "sanskrit": "अपेक्षया",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "सूर्यस्य",
+            "sanskrit": "सूर्यस्य",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "परिभ्रमणस्य",
+            "sanskrit": "परिभ्रमणस्य",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "अपेक्षया",
+            "sanskrit": "अपेक्षया",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "मम",
+            "sanskrit": "मम",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "परिक्रमणस्य",
+            "sanskrit": "परिक्रमणस्य",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "अपेक्षया",
+            "sanskrit": "अपेक्षया",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "अधिकतया",
+            "sanskrit": "अधिकतया",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "प्रसन्नः",
+            "sanskrit": "प्रसन्नः",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          },
+          {
+            "word": "आसीत्",
+            "sanskrit": "आसीत्",
+            "meaning": "Detailed analysis unavailable for this word.",
+            "transliteration": "",
+            "grammar": "Detailed analysis unavailable for this word.",
+            "pronunciation": ""
+          }
+        ],
+        "combined_meaning": "Sanskrit meaning: ए. के. मम परिक्रमणस्य अपेक्षया, सूर्यस्य परिभ्रमणस्य अपेक्षया, मम परिक्रमणस्य अपेक्षया, अधिकतया प्रसन्नः आसीत्।",
+        "back_translation": "AK was like the sun to me, she set everything spin and orbit around her and me i was more than happy to be spin around",
+        "verified": true,
+        "warning": null,
+        "explanation": "IndicTrans2 translation (English -> Sanskrit). Detailed grammatical analysis could not be generated.",
+        "reply": "Sanskrit:\nए. के. मम परिक्रमणस्य अपेक्षया, सूर्यस्य परिभ्रमणस्य अपेक्षया, मम परिक्रमणस्य अपेक्षया, अधिकतया प्रसन्नः आसीत्।\n\nCombined Meaning:\nSanskrit meaning: ए. के. मम परिक्रमणस्य अपेक्षया, सूर्यस्य परिभ्रमणस्य अपेक्षया, मम परिक्रमणस्य अपेक्षया, अधिकतया प्रसन्नः आसीत्।\n\nWord Meanings:\nए → Detailed analysis unavailable for this word.\nके → Detailed analysis unavailable for this word.\nमम → Detailed analysis unavailable for this word.\nपरिक्रमणस्य → Detailed analysis unavailable for this word.\nअपेक्षया → Detailed analysis unavailable for this word.\nसूर्यस्य → Detailed analysis unavailable for this word.\nपरिभ्रमणस्य → Detailed analysis unavailable for this word.\nअपेक्षया → Detailed analysis unavailable for this word.\nमम → Detailed analysis unavailable for this word.\nपरिक्रमणस्य → Detailed analysis unavailable for this word.\nअपेक्षया → Detailed analysis unavailable for this word.\nअधिकतया → Detailed analysis unavailable for this word.\nप्रसन्नः → Detailed analysis unavailable for this word.\nआसीत् → Detailed analysis unavailable for this word.\n\nExplanation:\nIndicTrans2 translation (English -> Sanskrit). Detailed grammatical analysis could not be generated."
+      }
+    }
+  }
+]
