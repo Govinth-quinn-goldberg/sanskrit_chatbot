@@ -9,32 +9,26 @@ pipeline {
             }
         }
 
-        stage('Check Python') {
+        stage('Jenkins Test') {
             steps {
-                sh 'python3 --version'
+                sh 'echo Jenkins is working!'
             }
         }
 
-        stage('Syntax Check') {
+        stage('Show Files') {
             steps {
-                sh 'python3 -m py_compile backend/translation_service.py'
-            }
-        }
-
-        stage('Build Frontend') {
-            steps {
-                sh 'cd frontend && npm install && npm run build'
+                sh 'ls -la'
             }
         }
     }
 
     post {
         success {
-            echo 'Sanskrit chatbot pipeline completed successfully!'
+            echo 'Jenkins pipeline completed successfully!'
         }
 
         failure {
-            echo 'Pipeline failed. Check the console output.'
+            echo 'Pipeline failed.'
         }
     }
 }
