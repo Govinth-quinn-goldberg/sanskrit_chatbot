@@ -1,14 +1,11 @@
 pipeline {
     agent any
-
     stages {
-
         stage('Checkout') {
             steps {
                 echo 'Getting Sanskrit chatbot code...'
             }
         }
-
         stage('Jenkins Test') {
             steps {
                 sh 'echo Jenkins is working!'
@@ -21,12 +18,10 @@ pipeline {
             }
         }
     }
-
     post {
         success {
             echo 'Jenkins pipeline completed successfully!'
         }
-
         failure {
             echo 'Pipeline failed.'
         }

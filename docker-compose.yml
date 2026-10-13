@@ -1,0 +1,23 @@
+services:
+
+  ollama:
+    image: ollama/ollama
+    container_name: sanskrit-ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+
+  backend:
+    build: ./backend
+    container_name: sanskrit-chatbot
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - ollama
+
+volumes:
+  ollama_data:
+  huggingface_cache:

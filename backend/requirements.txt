@@ -3,9 +3,9 @@ uvicorn>=0.22.0
 requests>=2.31.0
 python-dotenv>=1.0.0
 pydantic>=2.0.0
-torch
-transformers>=4.30.0
-sentencepiece
-sacremoses
-IndicTransToolkit
-indic-nlp-library
+torch==2.6.0
+transformers==4.40.2
+huggingface-hub==0.29.0
+sentencepiece==0.2.2
+sacremoses==0.2.0
+IndicTransToolkit==1.1.1

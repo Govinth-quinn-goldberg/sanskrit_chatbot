@@ -79,30 +79,33 @@ class TranslationService:
         self.tgt_lang = "san_Deva"
 
     def load_model(self):
-        """Loads IndicTrans2 200M model once at application startup on CPU."""
         if self.loaded:
             logger.info("IndicTrans2 model is already loaded.")
             return
 
-        logger.info(f"Loading IndicTrans2 200M distilled model ({self.model_repo}) on CPU...")
+        logger.info("Loading IndicTrans2 200M distilled model from local files on CPU...")
         start_time = time.time()
-        try:
-            # 1. Download model & tokenizer assets from Hugging Face Hub
-            src_vocab = hf_hub_download(self.model_repo, 'dict.SRC.json')
-            tgt_vocab = hf_hub_download(self.model_repo, 'dict.TGT.json')
-            src_spm = hf_hub_download(self.model_repo, 'model.SRC')
-            tgt_spm = hf_hub_download(self.model_repo, 'model.TGT')
-            tok_script = hf_hub_download(self.model_repo, 'tokenization_indictrans.py')
 
-            # 2. Dynamically import IndicTransTokenizer
-            spec = importlib.util.spec_from_file_location('tokenization_indictrans', tok_script)
+        try:
+           
+            model_dir = r"C:\Users\govin\.cache\huggingface\hub\models--naklitechie--indictrans2-en-indic-dist-200M\snapshots\a814dab1ae6e4ee4c7d785b7e1dcb0ac8e36bcd6"
+            src_vocab = os.path.join(model_dir, "dict.SRC.json")
+            tgt_vocab = os.path.join(model_dir, "dict.TGT.json")
+            src_spm = os.path.join(model_dir, "model.SRC")
+            tgt_spm = os.path.join(model_dir, "model.TGT")
+            tok_script = os.path.join(model_dir, "tokenization_indictrans.py")
+
+            spec = importlib.util.spec_from_file_location(
+                "tokenization_indictrans",
+                tok_script
+            )
             tok_mod = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(tok_mod)
 
-            tok_mod.IndicTransTokenizer.unk_token = '<unk>'
-            tok_mod.IndicTransTokenizer.pad_token = '<pad>'
-            tok_mod.IndicTransTokenizer.eos_token = '</s>'
-            tok_mod.IndicTransTokenizer.bos_token = '<s>'
+            tok_mod.IndicTransTokenizer.unk_token = "<unk>"
+            tok_mod.IndicTransTokenizer.pad_token = "<pad>"
+            tok_mod.IndicTransTokenizer.eos_token = "</s>"
+            tok_mod.IndicTransTokenizer.bos_token = "<s>"
 
             self.tokenizer = tok_mod.IndicTransTokenizer(
                 src_vocab_fp=src_vocab,
@@ -111,25 +114,31 @@ class TranslationService:
                 tgt_spm_fp=tgt_spm
             )
 
-            # 3. Load Seq2Seq Model (CPU float32)
             self.model = AutoModelForSeq2SeqLM.from_pretrained(
-                self.model_repo,
+                model_dir,
                 trust_remote_code=True,
+                local_files_only=True,
                 torch_dtype=torch.float32
             )
-            self.model.eval()
 
-            # 4. Initialize IndicProcessor
+            self.model.eval()
             self.ip = IndicProcessor(inference=True)
 
             self.load_time_seconds = round(time.time() - start_time, 2)
             self.loaded = True
-            logger.info(f"IndicTrans2 200M model successfully loaded in {self.load_time_seconds}s on CPU.")
+
+            logger.info(
+                f"IndicTrans2 200M model successfully loaded in "
+                f"{self.load_time_seconds}s on CPU."
+            )
+
         except Exception as e:
             self.loaded = False
             self.load_error = str(e)
-            logger.error(f"Failed to load IndicTrans2 model: {e}", exc_info=True)
-
+            logger.error(
+                f"Failed to load IndicTrans2 model: {e}",
+                exc_info=True
+            )
     def is_translation_request(self, query: str) -> bool:
         """Determines if a user message is a translation request or sentence to translate."""
         q = query.lower().strip()
@@ -175,7 +184,7 @@ class TranslationService:
             r"^translate[:\s]+",
             r"^give me the sanskrit for\s+",
             r"^what is the sanskrit for\s+",
-            r"\s+in sanskrit\??$"
+            r"\s+(in|into|to)\s+sanskrit\??$"
         ]
         clean_text = text
         for p in prefixes:
@@ -208,8 +217,13 @@ Original English:
 
 Analyze the Sanskrit sentence.
 
-Return ONLY valid JSON:
+Return ONLY one valid JSON object.
+Do not provide any explanation outside the JSON.
+Keep the 'explanation' field to one short sentence.
+Do not include markdown.
+Ensure the JSON is completely closed before stopping.
 
+Format:
 {{
   "back_translation": "English meaning of the Sanskrit",
   "verified": true,
@@ -231,10 +245,10 @@ Return ONLY valid JSON:
                     "stream": False,
                     "options": {
                         "temperature": 0.1,
-                        "num_predict": 150
+                        "num_predict": 300
                     }
                 },
-                timeout=30
+                timeout=120
             )
 
             elapsed = time.time() - start_time
@@ -273,8 +287,16 @@ Return ONLY valid JSON:
                 .strip()
             )
 
+            start_idx = clean_json.find("{")
+            end_idx = clean_json.rfind("}")
+
+            if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                json_str = clean_json[start_idx:end_idx + 1]
+            else:
+                json_str = clean_json
+
             try:
-                parsed = json.loads(clean_json)
+                parsed = json.loads(json_str)
 
                 return {
                     "back_translation": str(
@@ -349,16 +371,27 @@ Return ONLY valid JSON:
                 return_tensors="pt"
             )
 
+            gen_kwargs = {
+                "num_beams": 5,
+                "max_length": 256,
+                "use_cache": False
+            }
+
             with torch.inference_mode():
                 outputs = self.model.generate(
                     **inputs,
-                    num_beams=5,
-                    max_length=256,
-                    use_cache=False
+                    **gen_kwargs
                 )
 
+            logger.info(f"Generated token IDs: {outputs.tolist()}")
+
             decoded = self.tokenizer.batch_decode(outputs, skip_special_tokens=True)
-            translated_sanskrit = self.ip.postprocess_batch(decoded, lang=self.tgt_lang)[0]
+            logger.info(f"Decoded output before postprocess: {decoded}")
+
+            postprocessed = self.ip.postprocess_batch(decoded, lang=self.tgt_lang)
+            translated_sanskrit = postprocessed[0] if postprocessed and postprocessed[0] else (decoded[0].strip() if decoded else "")
+
+            logger.info(f"Postprocessed output: {translated_sanskrit!r}")
             elapsed = time.time() - t0
             logger.info(f"IndicTrans2 translated '{target_text}' -> '{translated_sanskrit}' in {elapsed:.2f}s")
 
